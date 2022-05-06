@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ilker Atik</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+  <h1 >Welcome, Please fill up the form below</h1>
+
+  <form action="/user/register" method="POST">
+    <div>
+      <label for="username">username</label>
+      <input type="text" name="username" id="username" placeholder="your_username">
+    </div>
+    <div>
+      <label for="email">email</label>
+      <input type="email" name="email" id="email" placeholder="your_email">
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input type="password" name="password" id="email" placeholder="your_password">
+    </div>
+    <div>
+      <input type='submit'></input>
+    </div>
+  </form>
+</body>
+
+</html>
