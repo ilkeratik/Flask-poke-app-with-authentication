@@ -1,3 +1,21 @@
+/* Setup */
+:root {
+	--black: #000000;
+	--almost-black: #263238;
+	--white: #ffffff;
+	--almost-white: #FBFBFB;
+	--grey-light: #CFD8DC;
+	--grey: #B0BEC5;
+	--grey-medium: #78909C;
+	--grey-dark: #455A64;
+	--primary: #1E88E5;
+	--primary-dark: #1976D2;
+	--secondary: #CFD8DC;
+	--secondary-dark: #B0BEC5;
+	--red: #EF4836;
+  }
+
+
 body{
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
@@ -6,7 +24,8 @@ body{
 	background: #F7F7F7;
 }
 h1{
-	background: #d1434f;
+	background: #474adb;
+	border-radius: 10px;
 	padding: 20px 0;
 	font-size: 140%;
 	font-weight: 300;
@@ -81,3 +100,88 @@ input[type="submit"]:hover,
 input[type="button"]:hover{
 	background: #2EBC99;
 }
+
+.error {
+	margin: 0;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: var(--red);
+  }
+  
+  .error--hidden {
+	display: none;
+  }
+
+  .login_link{
+	  color: blue;
+	  text-decoration: underline;
+  }
+
+  .center{
+	  text-align: center;
+  }
+  /* Cards */
+.card-wrapper {
+	margin: 0 auto;
+	padding: 90px 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	display: flex;
+  }
+  
+  .card {
+	margin: 0 30px 60px;
+	padding: 20px 40px;
+	width: 460px;
+	box-shadow: 0 8px 26px -4px rgba(0,0,0,0.15);
+	border-radius: 5px;
+	background: var(--white);
+  }
+  
+  @media only screen and (max-width: 520px) {
+	.card-wrapper {
+	  padding: 30px 0 0;
+	}
+  }
+  
+  @media only screen and (max-width: 520px) {
+	.card {
+	  margin: 0 0 30px;
+	  width: 100%;
+	  border-radius: 0;
+	}
+  }
+  
+  /* Buttons */
+.btn {
+	margin: 0 0 24px;
+	padding: 11px 30px 10px;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--white);
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	background: var(--primary);
+	transition: color .15s ease, background-color .15s ease;
+  }
+  
+  .btn:hover {
+	background: var(--primary-dark);
+  }
+  
+  .btn--secondary {
+	color: var(--almost-black);
+	background: var(--secondary);
+  }
+  
+  .btn--secondary:hover {
+	background: var(--secondary-dark);
+  }

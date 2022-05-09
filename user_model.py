@@ -15,7 +15,7 @@ class User(db.Model):
     id = Column('id', String(36), primary_key=True, default=uuid.uuid4)
     username = Column('username', String(40), nullable=False, unique=True)
     email = Column('email', String(40), unique=True)
-    password = Column('password', String(40), nullable=False)
+    password = Column('password', String(99), nullable=False)
 
 
 #engine = create_engine('mysql://root:12345@localhost/testdb', echo=True)
