@@ -21,3 +21,5 @@ flask run
 ```
 pip3 install -r requirements.txt
 ```
+#
+***Note in the /dashboard, https://pokeapi.co/api/v2/pokemon-species/ endpoint is used a valid seach query for it could be "aegislash"***
