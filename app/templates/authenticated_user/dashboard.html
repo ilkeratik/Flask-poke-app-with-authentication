@@ -34,8 +34,25 @@
       </p>
     
     </div>
-  
-  </div>
+
+    <div class="card">
+      <input id="poke_search_input" type="text" name="name" placeholder="Pokemon Name">
+      <button id="poke_search_btn" class="btn btn--secondary">Search</a>
+
+    </div>
+    <div id="search_result_wrapper" class="card hidden">
+      <h2 class="center">Search Result</h2>
+      <p class="error error--hidden"></p>
+      <div id="search_result">
+        <p></p>
+        <button id="save_btn"class="btn btn--secondary">Save Result to DB</button>
+      </div>
+    </div>
+  </div> 
+
+
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/scripts.js"></script>
 </body>
 
 </html>

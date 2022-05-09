@@ -1,14 +1,8 @@
-#username, email, password-at-least-8-ch
-
-from sqlalchemy import create_engine, Column, String, ForeignKey
+from sqlalchemy import create_engine, Column, String
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
-
+from sqlalchemy.orm import sessionmaker
 import uuid
-
-from database import db
-
-#Base = declarative_base()
+from db.database import db
 
 class User(db.Model):
     __tablename__ = "users"
@@ -18,10 +12,12 @@ class User(db.Model):
     password = Column('password', String(99), nullable=False)
 
 
-#engine = create_engine('mysql://root:12345@localhost/testdb', echo=True)
 
-#Base.metadata.create_all(engine)
 if __name__=='__main__':
+    #Base = declarative_base()
+    #engine = create_engine('mysql://root:12345@localhost/testdb', echo=True)
+    #Base.metadata.create_all(engine)
+
     session = db.session
 
     new_user = User()

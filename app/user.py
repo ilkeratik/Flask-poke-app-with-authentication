@@ -1,8 +1,8 @@
 from app import app
 from flask import request, render_template, redirect, session, jsonify
-from user_model import User
+from models.user_model import User
 from passlib.hash import pbkdf2_sha256
-from database import db
+from db.database import db
 
 @app.route('/')
 def index():

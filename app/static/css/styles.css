@@ -112,6 +112,9 @@ input[type="button"]:hover{
   .error--hidden {
 	display: none;
   }
+  .hidden{
+	display: none;
+  }
 
   .login_link{
 	  color: blue;
@@ -128,7 +131,8 @@ input[type="button"]:hover{
 	flex-wrap: wrap;
 	justify-content: center;
 	display: flex;
-  }
+	flex-direction: column;
+}
   
   .card {
 	margin: 0 30px 60px;
